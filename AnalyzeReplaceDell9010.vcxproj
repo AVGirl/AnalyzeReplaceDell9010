@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E780E332-16F8-4795-AE60-50E207F673CF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AnalyzeReplaceDell9010</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AnalyzeCmdLine.cpp" />
+    <ClCompile Include="AnalyzeReplaceDell9010.cpp" />
+    <ClCompile Include="Crc32.cpp" />
+    <ClCompile Include="DELLAnalyze.cpp" />
+    <ClCompile Include="EFIBIOSANALYZE.cpp" />
+    <ClCompile Include="FileOperations.cpp" />
+    <ClCompile Include="LZMA\LzmaCompress.c" />
+    <ClCompile Include="LZMA\LzmaDecompress.c" />
+    <ClCompile Include="LZMA\SDK\C\Bra86.c" />
+    <ClCompile Include="LZMA\SDK\C\LzFind.c" />
+    <ClCompile Include="LZMA\SDK\C\LzmaDec.c" />
+    <ClCompile Include="LZMA\SDK\C\LzmaEnc.c" />
+    <ClCompile Include="MemoryOperations.cpp" />
+    <ClCompile Include="peimage.cpp" />
+    <ClCompile Include="Tiano\EfiTianoCompress.c" />
+    <ClCompile Include="Tiano\EfiTianoCompressLegacy.c" />
+    <ClCompile Include="Tiano\EfiTianoDecompress.c" />
+    <ClCompile Include="Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnalyzeCmdLine.h" />
+    <ClInclude Include="AnalyzeReplaceDell9010.h" />
+    <ClInclude Include="Crc32.h" />
+    <ClInclude Include="DELLAnalyze.h" />
+    <ClInclude Include="EFIBIOSANALYZE.h" />
+    <ClInclude Include="FileOperations.h" />
+    <ClInclude Include="ListEntryOperations.h" />
+    <ClInclude Include="LZMA\LzmaCompress.h" />
+    <ClInclude Include="LZMA\LzmaDecompress.h" />
+    <ClInclude Include="LZMA\SDK\C\7zVersion.h" />
+    <ClInclude Include="LZMA\SDK\C\Bra.h" />
+    <ClInclude Include="LZMA\SDK\C\CpuArch.h" />
+    <ClInclude Include="LZMA\SDK\C\LzFind.h" />
+    <ClInclude Include="LZMA\SDK\C\LzHash.h" />
+    <ClInclude Include="LZMA\SDK\C\LzmaDec.h" />
+    <ClInclude Include="LZMA\SDK\C\LzmaEnc.h" />
+    <ClInclude Include="LZMA\SDK\C\Types.h" />
+    <ClInclude Include="LZMA\UefiLzma.h" />
+    <ClInclude Include="MemoryOperations.h" />
+    <ClInclude Include="peimage.h" />
+    <ClInclude Include="Tiano\EfiTianoCompress.h" />
+    <ClInclude Include="Tiano\EfiTianoDecompress.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="zlib\zconf.h" />
+    <ClInclude Include="zlib\zlib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="zlib\zlib.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

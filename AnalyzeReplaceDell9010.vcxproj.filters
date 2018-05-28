@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\zlib">
+      <UniqueIdentifier>{c817feb6-2c01-4ab1-aac5-e64c40fe795b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LZMA">
+      <UniqueIdentifier>{bc7d67b1-9436-4f15-b6b8-276377078936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LZMA\SDK">
+      <UniqueIdentifier>{748eede1-d19a-412c-bf5c-6e9321846ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LZMA\SDK\C">
+      <UniqueIdentifier>{0911d75f-8ec8-4d05-b75c-3396b889db46}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnalyzeReplaceDell9010.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalyzeCmdLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileOperations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryOperations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Crc32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DELLAnalyze.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EFIBIOSANALYZE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LZMA\LzmaCompress.c">
+      <Filter>Header Files\LZMA</Filter>
+    </ClCompile>
+    <ClCompile Include="LZMA\LzmaDecompress.c">
+      <Filter>Header Files\LZMA</Filter>
+    </ClCompile>
+    <ClCompile Include="LZMA\SDK\C\Bra86.c">
+      <Filter>Header Files\LZMA\SDK\C</Filter>
+    </ClCompile>
+    <ClCompile Include="LZMA\SDK\C\LzFind.c">
+      <Filter>Header Files\LZMA\SDK\C</Filter>
+    </ClCompile>
+    <ClCompile Include="LZMA\SDK\C\LzmaDec.c">
+      <Filter>Header Files\LZMA\SDK\C</Filter>
+    </ClCompile>
+    <ClCompile Include="LZMA\SDK\C\LzmaEnc.c">
+      <Filter>Header Files\LZMA\SDK\C</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiano\EfiTianoCompress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiano\EfiTianoCompressLegacy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiano\EfiTianoDecompress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="peimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnalyzeReplaceDell9010.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalyzeCmdLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileOperations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListEntryOperations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryOperations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zconf.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zlib.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="DELLAnalyze.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EFIBIOSANALYZE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LZMA\LzmaCompress.h">
+      <Filter>Header Files\LZMA</Filter>
+    </ClInclude>
+    <ClInclude Include="LZMA\LzmaDecompress.h">
+      <Filter>Header Files\LZMA</Filter>
+    </ClInclude>
+    <ClInclude Include="LZMA\UefiLzma.h">
+      <Filter>Header Files\LZMA</Filter>
+    </ClInclude>
+    <ClInclude Include="LZMA\SDK\C\7zVersion.h">
+      <Filter>Header Files\LZMA\SDK\C</Filter>
+    </ClInclude>
+    <ClInclude Include="LZMA\SDK\C\Bra.h">
+      <Filter>Header Files\LZMA\SDK\C</Filter>
+    </ClInclude>
+    <ClInclude Include="LZMA\SDK\C\CpuArch.h">
+      <Filter>Header Files\LZMA\SDK\C</Filter>
+    </ClInclude>
+    <ClInclude Include="LZMA\SDK\C\LzFind.h">
+      <Filter>Header Files\LZMA\SDK\C</Filter>
+    </ClInclude>
+    <ClInclude Include="LZMA\SDK\C\LzHash.h">
+      <Filter>Header Files\LZMA\SDK\C</Filter>
+    </ClInclude>
+    <ClInclude Include="LZMA\SDK\C\LzmaDec.h">
+      <Filter>Header Files\LZMA\SDK\C</Filter>
+    </ClInclude>
+    <ClInclude Include="LZMA\SDK\C\LzmaEnc.h">
+      <Filter>Header Files\LZMA\SDK\C</Filter>
+    </ClInclude>
+    <ClInclude Include="LZMA\SDK\C\Types.h">
+      <Filter>Header Files\LZMA\SDK\C</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiano\EfiTianoCompress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiano\EfiTianoDecompress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="peimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="zlib\zlib.lib">
+      <Filter>Header Files\zlib</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
